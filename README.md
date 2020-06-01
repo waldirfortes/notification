@@ -5,7 +5,7 @@ This library has the function of sending e-mail using the phpmailer library. Doi
 To install the library, run the following command:
 
 ```sh
-composer requires waldirdfortes / compositer_teste
+composer require waldirfortes/compositer_teste
 ```
 
 To make use of the library, simply request or automatically load the composer, invoke a class and make a method call:
@@ -15,11 +15,11 @@ To make use of the library, simply request or automatically load the composer, i
 
 require __DIR__. '/vendor/autoload.php';
 
-USE \ Email notification;
+USE Notification\Email;
 
-$ email = new Email (2, "mail.host.com", "your@email.com", "your-pass", "secure smtp (tls / ssl)", "port (587)","from@email.com", "From name");
+$email = new Email (2, "mail.host.com", "your@email.com", "your-pass", "secure smtp (tls / ssl)", "port (587)","from@email.com", "From name");
 
-$ email-> sendEmail ("SUbject", "Content", "reply@email.com", "Replay Name", "address@email.com", "Address Name");
+$email->sendEmail ("SUbject", "Content", "reply@email.com", "Replay Name", "address@email.com", "Address Name");
 ```
 
 Note that the entire configuration of sending email is using the magic builder method! Once, you invoked the constructor method within your application, your system is capable of causing shots.
@@ -64,7 +64,7 @@ USE Notification\Email;
 $email = new Email(2, "mail.host.com", "your@email.com", "your-pass", "smtp secure (tls/ssl)", "port (587)",
     "from@email.com", "From Name");
 
-$email->sendEmail("SUbject", "Content", "reply@email.com", "Replay Name", "address@email.com", "Address Name");
+$email->sendEmail("Subject", "Content", "reply@email.com", "Replay Name", "address@email.com", "Address Name");
 ```
 
 Note que toda a configuração do envio do e-mail está utilizando o método mágico construtor! Uma vez invocado o método construtor dentro da sua aplicação, seu sistema estar'á apto a efetuar os disparos.
