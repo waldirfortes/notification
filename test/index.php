@@ -7,19 +7,19 @@ use Notification\Email;
 $novoEmail = new Email(
     2,
     "smtp.gmail.com",
-    "waldirfortes@gmail.com",
+    "waldirfortestest@gmail.com",
     "test@123",
     "ssl",
     465,
-    "waldirfortes@gmail.com",
+    "waldirfortestest@gmail.com",
     "Equipa WFSoluction" );
 
 $novoEmail->sendMail(
     "Assunto de Teste",
     "<p>Esse é um e-mail de <b>teste II - Nhô Waldir</b>!</p>",
-    "waldirfortes@gmail.com",
+    "waldirfortestest@gmail.com",
     "Waldir Developer",
-    "waldirfortes@gmail.com",
+    "waldirfortestest@gmail.com",
     "Waldir Enacol");
 
 //var_dump($nomeEmail);
