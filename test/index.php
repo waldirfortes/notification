@@ -8,7 +8,7 @@ $nomeEmail = new Email(
     2,
     "smtp.gmail.com",
     "waldirfortes@gmail.com",
-    "W@ld1r1978F0rt3s",
+    "test@123",
     "ssl",
     465,
     "waldirfortes@gmail.com",
