@@ -21,5 +21,3 @@ $novoEmail->sendMail(
     "Waldir Developer",
     "waldirfortestest@gmail.com",
     "Waldir Enacol");
-
-//var_dump($nomeEmail);
