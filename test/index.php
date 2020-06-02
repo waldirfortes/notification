@@ -4,7 +4,7 @@ require __DIR__. '/../lib_ext/autoload.php';
 
 use Notification\Email;
 
-$nomeEmail = new Email(
+$novoEmail = new Email(
     2,
     "smtp.gmail.com",
     "waldirfortes@gmail.com",
@@ -14,7 +14,7 @@ $nomeEmail = new Email(
     "waldirfortes@gmail.com",
     "Equipa WFSoluction" );
 
-$nomeEmail->sendMail(
+$novoEmail->sendMail(
     "Assunto de Teste",
     "<p>Esse é um e-mail de <b>teste II - Nhô Waldir</b>!</p>",
     "waldirfortes@gmail.com",
